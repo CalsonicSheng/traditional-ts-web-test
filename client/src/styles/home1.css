@@ -1,0 +1,47 @@
+/*
+  - In CSS, you can use the "@import" rule to import a CSS file from another folder | this allows you to separate stylings in different css files to better organize your css code base 
+
+    - we can then use "@import" rule to import all other sub separate css files into a target main css file
+
+    - we always use "url" function for "@import" rule
+
+  - You can also use the @import rule to import a CSS file from a remote server by specifying a URL instead of a file path (very important)
+
+  - It is important to note that the @import rule should be placed at the top of the CSS file, before any other CSS rules. (just remember this, very important) 
+*/
+
+/* below we use the relative path to import the another css file that is stored in a different folder than the main css */
+@import url('/client/src/home2.css');
+
+.click-btn,
+.next-btn {
+  padding: 15px;
+  border-radius: 20px;
+  border: none;
+  background-image: linear-gradient(to left top, rgb(126, 126, 190), rgb(216, 145, 145));
+  font-weight: bold;
+  margin: 20px 0px;
+}
+
+.click-btn :hover {
+  cursor: pointer;
+}
+.next-btn :hover {
+  cursor: pointer;
+}
+
+// the same css selectors, the one is below will override the above css styling
+h1 {
+  color: green;
+  margin: 20px 0px;
+}
+
+h1 {
+  color: yellow;
+  margin: 20px 0px;
+}
+
+h1 {
+  color: red;
+  margin: 20px 0px;
+}

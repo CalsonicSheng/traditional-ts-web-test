@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home (non-bundled)</title>
+    <!-- only these two associated css files (all) will be fetched for this target html file -->
+    <!-- multiple css files can work together under a same html file | css file link tag order matters as it will determines the rule of style overriding -->
+
+    <!-- <link rel="stylesheet" href="/styles/html1.css" />
+    <link rel="stylesheet" href="/styles/html2.css" /> -->
+  </head>
+  <body>
+    <h1>Home Page</h1>
+
+    <!-- ---------------------------------------------------------------------------------------- -->
+
+    <button class="click-btn" type="button"><h3 class="click-me">click me</h3></button>
+    <div class="div-before-click"></div>
+
+    <!-- ---------------------------------------------------------------------------------------- -->
+
+    <button class="next-btn" type="button">
+      <a href="/next">
+        <h4>next page</h4>
+      </a>
+    </button>
+    <!-- only these two associated js files (all) will be fetched for this target html file -->
+    <!-- multiple js files can work together under a same html file -->
+    <!-- under non-module/bundled approach the execution order of js files are based on script tag order, if dependencies involved, order must be sorted  -->
+
+    <!-- <script src="/src/homeJS/homeSub.js"></script>
+    <script src="/src/homeJS/homeMain.js"></script> -->
+
+    <script src="/homePageBundle.js"></script>
+  </body>
+</html>

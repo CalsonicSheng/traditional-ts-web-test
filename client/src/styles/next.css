@@ -1,0 +1,10 @@
+.btn-user,
+.btn-book,
+.btn-python {
+  padding: 15px;
+  border-radius: 20px;
+  border: none;
+  background-image: linear-gradient(to left top, rgb(126, 126, 190), rgb(216, 145, 145));
+  font-weight: bold;
+  margin: 20px 20px;
+}

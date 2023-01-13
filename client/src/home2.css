@@ -1,0 +1,14 @@
+/* you can have multiple different separated css classes to apply different styles SAME HTML ELEMENT for the SAME STYLING PROPERTIES */
+/* style-overriding now depends on the order of class added in classlist in that target element (the class comes after will override the previous positioned class) */
+.div-before-click {
+  width: 200px;
+  height: 100px;
+  background-color: red;
+}
+
+/* this is the class style will be dynamically added to that div after click (initially, this class name is not add to html div element) */
+.div-after-click {
+  width: 400px;
+  height: 200px;
+  background-color: blue;
+}
